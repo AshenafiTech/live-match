@@ -2,6 +2,7 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY src/ .
+COPY main.py .
+COPY src/ ./src
 
-CMD ["python", "simulate.py"]
+CMD ["python", "-u", "main.py"]

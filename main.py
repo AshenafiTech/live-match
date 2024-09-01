@@ -15,8 +15,8 @@ def simulate_match_events(match_name: str, match_manager: MatchManager):
         current_time = time.time()
         elapsed_time = current_time - start_time
         
-        # End the simulation after 40 seconds
-        if elapsed_time > 40:
+        # End the simulation after 60 seconds
+        if elapsed_time > 60:
             match_manager.notify_final_score(match_name)
             print(f"\n--- End of simulation for {match_name} ---\n")
             break
